@@ -1,0 +1,48 @@
+root: true
+
+env:
+  browser: true
+  node: true
+# commonjs: true
+# es6: true
+
+parserOptions:
+  parser: 'babel-eslint'
+# ecmaVersion: 11
+
+extends:
+  - '@nuxtjs'
+  - 'prettier'
+  - 'prettier/vue'
+  - 'plugin:prettier/recommended'
+  - 'plugin:nuxt/recommended'
+  # 'plugin:vue/essential'
+  # google
+
+plugins:
+  - prettier
+  # vue
+
+# # see: https://eslint.org/docs/user-guide/configuring#ignorepatterns-in-config-files-1
+# ignorePatterns:
+#   - 'node_modules/**'
+#   - '.eslintrc.js'
+#   - 'nuxt.config.js'
+
+# globals:
+#   Atomics: readonly
+#   SharedArrayBuffer: readonly
+
+# add your custom rules here
+rules:
+  "prettier/prettier": warn
+  "require-await": warn
+  "handle-callback-err": warn
+  "vue/no-unused-components": warn
+  "vue/valid-v-slot": warn
+  "no-undef": warn
+  "no-unreachable": warn
+  "no-unused-vars": warn
+  "no-new": off
+  "no-console": off
+  "no-debugger": off

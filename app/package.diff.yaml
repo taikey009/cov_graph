@@ -1,0 +1,13 @@
+---
+  scripts:
+    # functions
+#   lint: "eslint ."
+#   start: "npm run shell"
+    # nuxt
+    lint: "yarn lint:js"
+    start: "nuxt start"
+
+  engines:
+    # functions
+#   node: 12
+    node: 10
